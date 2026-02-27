@@ -236,7 +236,7 @@ function HomeTab({entries,obog,setTab,setModal}){
       </div>
       {/* quick add */}
       <button onClick={()=>setModal("new")} style={{...cardStyle({padding:"14px 16px",border:`2px dashed ${C.border}`,background:"transparent",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",gap:8,color:C.sub,fontWeight:700,fontSize:15,fontFamily:"inherit"})}>
-        {"+ 企業を追加"}
+        "+ 企業を追加"
       </button>
     </div>
   );
