@@ -154,7 +154,7 @@ function EntryModal({entry,onClose,onSave}){
           <div>
             <div style={{display:"flex",justifyContent:"space-between",alignItems:"center",marginBottom:10}}>
               <label style={{...lbl,marginBottom:0}}>面接・イベント日程</label>
-              <button onClick={addDate} style={{fontSize:13,color:C.accent,background:"none",border:"none",cursor:"pointer",fontWeight:700}}>＋ 追加</button>
+              <button onClick={addDate} style={{fontSize:13,color:C.accent,background:"none",border:"none",cursor:"pointer",fontWeight:700}}>+ 追加</button>
             </div>
             {(form.dates||[]).length===0&&<div style={{color:C.sub,fontSize:13,textAlign:"center",padding:"20px 0"}}>日程が登録されていません</div>}
             {(form.dates||[]).map((d,i)=>(
@@ -236,7 +236,7 @@ function HomeTab({entries,obog,setTab,setModal}){
       </div>
       {/* quick add */}
       <button onClick={()=>setModal("new")} style={{...cardStyle({padding:"14px 16px",border:`2px dashed ${C.border}`,background:"transparent",cursor:"pointer",display:"flex",alignItems:"center",justifyContent:"center",gap:8,color:C.sub,fontWeight:700,fontSize:15,fontFamily:"inherit"})}>
-        ＋ 企業を追加
+        + 企業を追加
       </button>
     </div>
   );
